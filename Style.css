@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #263b2c;
+    background: #f7faf6;
+    line-height: 1.7;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px #0000000d;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #244d35;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #83b65b;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #355541;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #83b65b;
+}
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(13,45,29,.88), rgba(13,45,29,.25)),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=1800")
+        center/cover;
+}
+
+.hero-conteudo {
+    max-width: 650px;
+}
+
+.etiqueta, .subtitulo {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #83b65b;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 58px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 520px;
+    color: #e5eee5;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #83b65b;
+    color: #173c29;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.botao:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.introducao {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.introducao h2, .titulo-secao h2,
+.artigos h2 {
+    font-size: 34px;
+    margin: 12px 0 20px;
+    color: #244d35;
+}
+
+.introducao p {
+    color: #65766a;
+}
+
+.temas {
+    padding: 70px 8%;
+    background: #eef4eb;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-secao p {
+    color: #65766a;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #234a3010;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px #234a3020;
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 25px;
+}
+
+.numero {
+    color: #83b65b;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.card h3 {
+    font-size: 21px;
+    margin: 8px 0;
+    color: #244d35;
+}
+
+.card p {
+    color: #68776c;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 13px;
+    color: #46794d;
+    margin-bottom: 5px;
+}
+
+.card a, .artigo-item a {
+    color: #4d873e;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.card a:hover, .artigo-item a:hover {
+    text-decoration: underline;
+}
+
+.destaque {
+    padding: 90px 10%;
+    background: #244d35;
+    color: white;
+    text-align: center;
+}
+
+.destaque div {
+    max-width: 900px;
+    margin: auto;
+}
+
+.destaque h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.destaque p {
+    color: #d7e6d8;
+}
+
+.artigos {
+    max-width: 900px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.artigos > p {
+    color: #65766a;
+    margin-bottom: 30px;
+}
+
+.artigo-item {
+    padding: 22px 0;
+    border-bottom: 1px solid #dce7dc;
+}
+
+.artigo-item h3 {
+    color: #244d35;
+    font-size: 17px;
+}
+
+.artigo-item p {
+    color: #65766a;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.curiosidade {
+    background: #e4efdf;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.curiosidade h2 {
+    color: #244d35;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.curiosidade p {
+    max-width: 650px;
+    margin: auto;
+    color: #526b58;
+}
+
+.curiosidade button {
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #244d35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+}
+
+.curiosidade button:hover {
+    background: #83b65b;
+    color: #173c29;
+}
+
+footer {
+    background: #173c29;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    font-size: 25px;
+    color: #a4cf7e;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+.creditos {
+    margin-top: 20px;
+    color: #b8cdbb;
+}
+
+@media (max-width: 700px) {
+    .topo {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 8%;
+    }
+
+    .introducao h2, .titulo-secao h2,
+    .artigos h2 {
+        font-size: 27px;
+    }
+
+    .destaque h2 {
+        font-size: 23px;
+    }
+}
